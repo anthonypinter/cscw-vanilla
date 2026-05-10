@@ -1,0 +1,292 @@
+---
+permalink: /404.html
+layout: default
+---
+
+  <style>
+    :root {
+      --bg:        #f7f5f0;
+      --surface:   #ffffff;
+      --ink:       #1a1a18;
+      --ink-mid:   #4a4a44;
+      --ink-light: #8a8a80;
+      --rule:      #d8d5cc;
+      --accent:    #1d3557;
+      --accent2:   #c0392b;
+      --max-w:     1100px;
+      --serif:     Helvetica Neue, Helvetica, Arial, sans-serif;
+      --body:      Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--body);
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 3px double var(--rule);
+      padding: 2rem 0 1.5rem;
+      background: var(--surface);
+    }
+    .masthead-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+    .masthead-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .masthead-sub {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--ink-mid);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      border-bottom: 1px solid var(--rule);
+      background: var(--surface);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display: none; }
+    .nav-link {
+      display: inline-block;
+      padding: 0.85rem 1.2rem;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.18s, border-color 0.18s;
+    }
+    .nav-link:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .nav-link-cscw {
+      color: #0092CE;
+      font-weight: 500;
+    }
+    .nav-link-cscw:hover {
+      color: #0092CE;
+      border-bottom-color: #0092CE;
+    }
+
+    /* ── 404 CONTENT ── */
+    .error-section {
+      flex: 1;
+      padding: 6rem 0;
+      display: flex;
+      align-items: center;
+    }
+    .error-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .error-section > .container {
+      width: 100%;
+    }
+    .error-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--accent2);
+      padding-bottom: 0.2rem;
+    }
+    .error-headline {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .error-body {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--ink-mid);
+      margin-bottom: 2rem;
+    }
+    .error-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .error-link {
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      align-self: flex-start;
+      padding-bottom: 0.1rem;
+      transition: border-color 0.18s;
+    }
+    .error-link:hover {
+      border-bottom-color: var(--accent);
+    }
+    .error-right {
+      border-right: 3px solid var(--rule);
+      padding-right: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+    .error-num {
+      font-size: clamp(6rem, 12vw, 10rem);
+      font-weight: 700;
+      color: var(--accent2);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+    .error-aside-text {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      border-top: 3px double var(--rule);
+      padding: 2rem 0;
+      background: var(--surface);
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--ink-light);
+    }
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+    }
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .error-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .error-right { border-right: none; border-bottom: 3px solid var(--rule); padding-right: 0; padding-bottom: 2rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1.25rem; }
+      .error-section { padding: 3rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="container">
+      <span class="masthead-eyebrow">ACM SIGCHI</span>
+      <div><a href="index.html" style="text-decoration:none;"><h1 class="masthead-title">CSCW Steering Committee</h1></a></div>
+      <span class="masthead-sub">Computer-Supported Cooperative Work &amp; Social Computing</span>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Site navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="nav-link" href="index.html#news">News</a>
+        <a class="nav-link" href="index.html#about">About</a>
+        <a class="nav-link" href="index.html#members">Steering Committee</a>
+        <a class="nav-link" href="index.html#history">Past Conferences</a>
+        <a class="nav-link" href="index.html#mailing-list">Mailing List</a>
+        <a class="nav-link nav-link-cscw" href="https://cscw.acm.org/2026" target="_blank" rel="noopener">CSCW 2026 ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 404 -->
+  <section class="error-section">
+    <div class="container">
+      <div class="error-layout">
+        <div class="error-right">
+          <div class="error-num">404</div>
+          <p class="error-aside-text">This page does not exist<br>or has been moved.</p>
+        </div>
+        <div class="error-left">
+          <h2 class="error-headline">Page not found</h2>
+          <p class="error-body">The page you're looking for doesn't exist or may have been moved. Try navigating back to the homepage or one of the sections below.</p>
+          <div class="error-links">
+            <a class="error-link" href="index.html">← Back to homepage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 ACM CSCW Steering Committee · Association for Computing Machinery</p>
+        <div class="footer-links">
+          <a href="https://cscw.acm.org" target="_blank" rel="noopener">Conference</a>
+          <a href="https://sigchi.org" target="_blank" rel="noopener">SIGCHI</a>
+          <a href="https://acm.org" target="_blank" rel="noopener">ACM</a>
+          <a href="https://dl.acm.org" target="_blank" rel="noopener">Digital Library</a>
+        </div>
+      </div>
+    </div>
+  </footer>
