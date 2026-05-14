@@ -1,0 +1,262 @@
+  - year     : 2026
+    locale   : Salt Lake City, USA
+    gc1      : Guo Freeman (Clemson University, USA)
+    gc2      : Xinru Page (Brigham Young University, USA)
+    photo    : /images/conferences/2026.webp
+    alt      : CSCW2026 logo
+    link     : https://cscw.acm.org/2026/
+    current  : Y
+    color1   : '#0092CE'
+    color2   : '#66ABEC'
+
+  - year     : 2025
+    locale   : Bergen, Norway
+    gc1      : Fabiano Pinatti (University of Oslo, Norway)
+    gc2      : Jessica Vitak (University of Maryland, USA)
+    photo    : 
+    alt      : CSCW2025 logo
+    link     : https://cscw.acm.org/2025/
+    current  : N
+
+  - year     : 2024
+    locale   : San José, Costa Rica
+    gc1      : Rosta Farzan (University of Pittsburgh, USA)
+    gc2      : Claudia López (Universidad Técnica Federico Santa María, Chile)
+    photo    :
+    alt      : CSCW 2024 logo
+    link     : https://cscw.acm.org/2024/
+    current  : N
+
+  - year     : 2023
+    locale   : Minneapolis, USA
+    gc1      : Casey Fiesler (University of Colorado Boulder, USA)
+    gc2      : Loren Terveen (University of Minnesota, USA)
+    photo    :
+    alt      : CSCW 2023 logo
+    link     : https://cscw.acm.org/2023/
+    current  : N
+
+  - year     : 2022
+    locale   : Virtual
+    gc1      : Gary Hsieh (University of Washington, USA)
+    gc2      : Tony Tang (University of Toronto, Canada)
+    photo    :
+    alt      : CSCW 2022 logo
+    link     : https://cscw.acm.org/2022/
+    current  : N
+
+  - year     : 2021
+    locale   : Virtual
+    gc1      : Jeremy Birnholtz (Northwestern University, USA)
+    gc2      : Luigina Ciolfi (University College Cork, Ireland)
+    photo    :
+    alt      : CSCW 2021 logo
+    link     : https://cscw.acm.org/2021/
+    current  : N
+
+  - year     : 2020
+    locale   : Virtual
+    gc1      : Matthew Bietz (University of California, Irvine, USA)
+    gc2      : Andrea Wiggins (University of Nebraska at Omaha, USA)
+    photo    :
+    alt      : CSCW 2020 logo
+    link     : https://cscw.acm.org/2020/
+    current  : N
+
+  - year     : 2019
+    locale   : Austin, USA
+    gc1      : Eric Gilbert (University of Michigan, USA)
+    gc2      : Karrie Karahalios (University of Illinois, Urbana-Champaign, USA)
+    photo    :
+    alt      : CSCW 2019 logo
+    link     : https://cscw.acm.org/2019/
+    current  : N
+
+  - year     : 2018
+    locale   : Jersey City, USA
+    gc1      : Geraldine Fitzpatrick (TU Wien, Austria)
+    gc2      : Andrés Monroy-Hernández (Princeton University, USA)
+    photo    :
+    alt      : CSCW 2018 logo
+    link     : https://cscw.acm.org/2018/
+    current  : N
+
+  - year     : 2017
+    locale   : Portland, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2017 logo
+    link     : https://cscw.acm.org/2017/
+    current  : N
+
+  - year     : 2016
+    locale   : San Francisco, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2016 logo
+    link     : https://cscw.acm.org/2016/
+    current  : N
+
+  - year     : 2015
+    locale   : Vancouver, Canada
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2015 logo
+    link     : https://cscw.acm.org/2015/
+    current  : N
+
+  - year     : 2014
+    locale   : Baltimore, USA
+    gc1      : Susan Fussell (Cornell University, USA)
+    gc2      : Wayne Lutters (University of Maryland Baltimore County, USA)
+    photo    :
+    alt      : CSCW 2014 logo
+    link     : https://cscw.acm.org/2014/
+    current  : N
+
+  - year     : 2013
+    locale   : San Antonio, USA
+    gc1      : Amy Bruckman (Georgia Tech, USA)
+    gc2      : Scott Counts (Microsoft Research, USA)
+    photo    :
+    alt      : CSCW 2013 logo
+    link     : https://cscw.acm.org/2013/
+    current  : N
+
+  - year     : 2012
+    locale   : Seattle, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2012 logo
+    link     : https://dl.acm.org/citation.cfm?id=2145204
+    current  : N
+
+  - year     : 2011
+    locale   : Hangzhou, China
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2011 logo
+    link     : https://dl.acm.org/citation.cfm?id=1958824
+    current  : N
+
+  - year     : 2010
+    locale   : Savannah, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2010 logo
+    link     : https://dl.acm.org/citation.cfm?id=1718918
+    current  : N
+
+  - year     : 2008
+    locale   : San Diego, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2008 logo
+    link     : https://dl.acm.org/citation.cfm?id=1460563
+    current  : N
+
+  - year     : 2006
+    locale   : Banff, Canada
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2006 logo
+    link     : https://dl.acm.org/citation.cfm?id=1180875
+    current  : N
+
+  - year     : 2004
+    locale   : Chicago, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2004 logo
+    link     : https://dl.acm.org/citation.cfm?id=1031607
+    current  : N
+
+  - year     : 2002
+    locale   : New Orleans, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2002 logo
+    link     : https://dl.acm.org/citation.cfm?id=587078
+    current  : N
+
+  - year     : 2000
+    locale   : Philadelphia, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 2000 logo
+    link     : https://dl.acm.org/citation.cfm?id=358916
+    current  : N
+
+  - year     : 1998
+    locale   : Seattle, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1998 logo
+    link     : https://dl.acm.org/citation.cfm?id=289444
+    current  : N
+
+  - year     : 1996
+    locale   : Boston, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1996 logo
+    link     : https://dl.acm.org/citation.cfm?id=240080
+    current  : N
+
+  - year     : 1994
+    locale   : Chapel Hill, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1994 logo
+    link     : https://dl.acm.org/citation.cfm?id=192844
+    current  : N
+
+  - year     : 1992
+    locale   : Toronto, Canada
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1992 logo
+    link     : https://dl.acm.org/citation.cfm?id=143457
+    current  : N
+
+  - year     : 1990
+    locale   : Los Angeles, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1990 logo
+    link     : https://dl.acm.org/citation.cfm?id=99332
+    current  : N
+
+  - year     : 1988
+    locale   : Portland, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1988 logo
+    link     : https://dl.acm.org/citation.cfm?id=62266
+    current  : N
+
+  - year     : 1986
+    locale   : Austin, USA
+    gc1      :
+    gc2      :
+    photo    :
+    alt      : CSCW 1986 logo
+    link     : https://dl.acm.org/citation.cfm?id=637069
+    current  : N
