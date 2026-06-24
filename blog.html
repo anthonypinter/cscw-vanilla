@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /blog/
+title: Blog
+---
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Blog</h2>
+      </div>
+      <div class="blog-list">
+
+        {% assign posts = site.data.news | sort: "date" | reverse %}
+        {% for item in posts %}
+
+        <a class="news-card" href="#">
+          <div class="news-date">{{ item.date | date: "%B %-d, %Y" }}</div>
+          <div class="news-headline">{{item.title}}</div>
+          <p class="news-abstract">{{item.abstract}}</p>
+          <div class="news-read-more">Read more →</div>
+        </a>
+
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>

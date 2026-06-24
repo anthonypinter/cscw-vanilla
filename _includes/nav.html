@@ -1,12 +1,45 @@
 <nav class="nav" aria-label="Site navigation">
-    <div class="container">
-      <div class="nav-inner">
-        <a class="nav-link active" href="#news">News</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#members">Steering Committee</a>
-        <a class="nav-link" href="#history">Past Conferences</a>
-        <a class="nav-link" href="#mailing-list">Mailing List</a>
-        <a class="nav-link nav-link-cscw" href="https://cscw.acm.org" target="_blank" rel="noopener">CSCW 2026 ↗</a>
+  <div class="container">
+    <div class="nav-inner">
+
+      <a class="nav-link {% if page.url contains '/blog' %}active{% endif %}" href="{{site.baseurl}}/blog">Blog</a>
+
+      <div class="nav-dropdown">
+        <a class="nav-link {% if page.url contains '/about' %}active{% endif %}" href="{{site.baseurl}}/about/" aria-haspopup="true">About <span class="nav-dropdown-chevron" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown-menu">
+          <a href="{{site.baseurl}}/about/#about-cscw">About CSCW</a>
+          <a href="{{site.baseurl}}/about/#about-steering">About Steering Committee</a>
+          <a href="{{site.baseurl}}/about/#faq">FAQ</a>
+          <a href="{{site.baseurl}}/about/#members">Steering Committee Members</a>
+        </div>
       </div>
+
+      <a class="nav-link {% if page.url contains '/past-conferences' %}active{% endif %}" href="{{site.baseurl}}/past-conferences">Past Conferences</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-toggle" aria-haspopup="true">
+          Volunteer <span class="nav-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#">Volunteer to Review</a>
+          <a href="#">Volunteer to Organize</a>
+          <a href="#">Feedback Form</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Community <span class="nav-dropdown-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#">Mailing List</a>
+          <a href="#" target="_blank" rel="noopener">CSCW Meta (Facebook) ↗</a>
+          <a href="#" target="_blank" rel="noopener">Bluesky ↗</a>
+        </div>
+      </div>
+
+      <a class="nav-link nav-link-cscw" href="https://cscw.acm.org" target="_blank" rel="noopener">CSCW 2026 ↗</a>
+
     </div>
-  </nav>
+  </div>
+</nav>

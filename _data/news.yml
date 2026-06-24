@@ -1,7 +1,7 @@
-  - date     : May 1, 2026
-    title    : Lorem ipsum dolor sit amet consectetur adipiscing elit
-    abstract : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- date     : "2026-05-01"
+  title    : Lorem ipsum dolor sit amet consectetur adipiscing elit
+  abstract : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-  - date     : April 14, 2026
-    title    : Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-    abstract : Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+- date     : "2026-04-14"
+  title    : Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  abstract : Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.

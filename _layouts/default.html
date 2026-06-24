@@ -6,7 +6,37 @@
   <body>
     {% include masthead.html %}
     {% include nav.html %}
-    {{ content }}
+    <main class="main-content">{{ content }}</main>
+    {% include footer.html %}
+
+    <script>
+
+      // Carousel (only init if the carousel element exists on this page)
+      (function () {
+        var carousel = document.querySelector('.conf-carousel');
+        if (!carousel) return;
+        var prevBtn = document.querySelector('.carousel-prev');
+        var nextBtn = document.querySelector('.carousel-next');
+        function getCardWidth() {
+          var card = carousel.querySelector('.conf-card');
+          var gap = parseFloat(getComputedStyle(carousel).gap) || 24;
+          return card.offsetWidth + gap;
+        }
+        function updateButtons() {
+          prevBtn.disabled = carousel.scrollLeft <= 1;
+          nextBtn.disabled = carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1;
+        }
+        prevBtn.addEventListener('click', function () {
+          carousel.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+        });
+        nextBtn.addEventListener('click', function () {
+          carousel.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+        });
+        carousel.addEventListener('scroll', updateButtons, { passive: true });
+        window.addEventListener('resize', updateButtons);
+        updateButtons();
+      })();
+    </script>
   </body>
 
 </html>

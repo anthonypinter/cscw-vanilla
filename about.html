@@ -1,0 +1,100 @@
+---
+layout: default
+permalink: /about/
+title: About
+---
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About</h2>
+      </div>
+
+      <!-- About CSCW -->
+      <div class="about-subsection" id="about-cscw">
+        <h3 class="about-sub-title">About CSCW</h3>
+        <div class="about-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+
+      <!-- About the Steering Committee -->
+      <div class="about-subsection" id="about-steering">
+        <h3 class="about-sub-title">About the Steering Committee</h3>
+        <div class="about-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="about-subsection" id="faq">
+        <h3 class="about-sub-title">Frequently Asked Questions</h3>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <h4 class="faq-q">What is CSCW?</h4>
+            <p class="faq-a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-q">When and where is the next CSCW?</h4>
+            <p class="faq-a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-q">How can I submit a paper?</h4>
+            <p class="faq-a">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4 class="faq-q">How do I contact the Steering Committee?</h4>
+            <p class="faq-a">For general questions, please write to <a class="contact-link" href="mailto:steering@cscw.acm.org">steering@cscw.acm.org</a>. For conference-specific inquiries, contact that year's organizing committee through the conference website.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Steering Committee Members -->
+      <div class="about-subsection" id="members">
+        <h3 class="about-sub-title">Steering Committee Members</h3>
+        <div class="members-grid">
+          {% for item in site.data.steering %}
+          <a class="member-card" href="#">
+            {% if item.photo %}
+              <img class="member-photo" src="{{item.photo}}" alt="{{item.alt}}">
+            {% else %}
+              <img class="member-photo" src="{{site.baseurl}}/images/steering/placeholder.png" alt="A placeholder image">
+            {% endif %}
+            <div class="member-info">
+              <div class="member-role">{{item.role}}</div>
+              <div class="member-name">{{item.name}}</div>
+              <div class="member-affil">{{item.affil}}</div>
+              <div class="member-title">{{item.title}}</div>
+              {% if item.term %}
+              <div class="member-term">{{item.term}}</div>
+              {% endif %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact-inset" style="margin-top: 1rem;">
+        <div class="contact-block">
+          <div class="contact-label">General Inquiries</div>
+          <p class="contact-text">For questions directed to the CSCW Steering Committee, please write to<br><a class="contact-link" href="mailto:steering@cscw.acm.org">steering@cscw.acm.org</a></p>
+        </div>
+        <div class="contact-block">
+          <div class="contact-label">Conference-Specific Inquiries</div>
+          <p class="contact-text">For questions about a particular year's conference — submissions, registration, or program — please contact that year's organizing committee directly through the conference website.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
