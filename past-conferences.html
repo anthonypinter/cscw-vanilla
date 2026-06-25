@@ -10,142 +10,170 @@ title: Past Conferences
       <div class="section-header">
         <h2 class="section-title">Past Conferences</h2>
       </div>
-      <div class="conf-carousel-wrapper">
-        <button class="carousel-btn carousel-prev" aria-label="Previous">&#8592;</button>
-        <div class="conf-carousel">
+      <div class="conf-list">
 
-          {% for item in site.data.conferences %}
+        {% for item in site.data.conferences %}
 
-          {% if item.current == 'Y' %}
+        {% if item.current == 'Y' %}
 
-          <a class="conf-card conf-card-featured" style="border-color: {{item.color1}}; background: #f0f8fd" href="{{item.link}}">
-            <img class="conf-logo conf-logo-featured" style="background: #fff" src="{{item.photo}}" alt="{{item.alt}}">
-            <div class="conf-year">{{item.year}}</div>
-            <div class="conf-location">{{item.locale}}</div>
-            <div class="conf-chairs">General Chairs:<br>{{item.gc1}}<br>{{item.gc2}}</div>
-            <span class="conf-link conf-link-featured">{{item.link}}</span>
-          </a>
+        <a class="conf-card conf-card-featured" style="border-color: {{item.color1}}" href="{{item.link}}">
+          <img class="conf-card-logo" src="{{item.photo}}" alt="{{item.alt}}">
+          <div class="conf-card-body">
+            <div class="conf-card-location">{{item.locale}}</div>
+            <ul class="conf-card-chairs">
+              <li>{{item.gc1}}</li>
+              <li>{{item.gc2}}</li>
+            </ul>
+          </div>
+        </a>
 
-          {% else %}
+        {% else %}
 
-          <a class="conf-card" href="#">
-            <img class="conf-logo" src="{{item.photo}}" alt="{{item.alt}}">
-            <div class="conf-year">{{item.year}}</div>
-            <div class="conf-location">{{item.locale}}</div>
-            <div class="conf-chairs">General Chairs:<br>{{item.gc1}}<br>{{item.gc2}}</div>
-            <span class="conf-link">{{item.link}}</span>
-          </a>
+        <a class="conf-card" href="#">
+          <img class="conf-card-logo" src="{{item.photo}}" alt="{{item.alt}}">
+          <div class="conf-card-body">
+            <div class="conf-card-location">{{item.locale}}</div>
+            <ul class="conf-card-chairs">
+              <li>{{item.gc1}}</li>
+              <li>{{item.gc2}}</li>
+            </ul>
+          </div>
+        </a>
 
-          {% endif %}
+        {% endif %}
 
-          {% endfor %}
+        {% endfor %}
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2025</div>
-            <div class="conf-location">Bergen, Norway</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2025 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Bergen, Norway</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2024</div>
-            <div class="conf-location">San José, Costa Rica</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2024 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">San José, Costa Rica</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2023</div>
-            <div class="conf-location">Minneapolis, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2023 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Minneapolis, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2022</div>
-            <div class="conf-location">Virtual</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2022 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Virtual</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2021</div>
-            <div class="conf-location">Virtual</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2021 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Virtual</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2020</div>
-            <div class="conf-location">Virtual</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2020 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Virtual</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2019</div>
-            <div class="conf-location">Austin, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2019 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Austin, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2018</div>
-            <div class="conf-location">Jersey City, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2018 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Jersey City, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2017</div>
-            <div class="conf-location">Portland, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2017 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Portland, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2016</div>
-            <div class="conf-location">San Francisco, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2016 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">San Francisco, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2015</div>
-            <div class="conf-location">Vancouver, Canada</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2015 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Vancouver, Canada</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2014</div>
-            <div class="conf-location">Baltimore, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2014 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">Baltimore, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-          <a class="conf-card" href="#">
-            <div class="conf-logo"></div>
-            <div class="conf-year">2013</div>
-            <div class="conf-location">San Antonio, USA</div>
-            <div class="conf-chairs">General Chairs:<br>Placeholder Name<br>Placeholder Name</div>
-            <span class="conf-link">cscw.acm.org/2013 ↗</span>
-          </a>
+        <a class="conf-card" href="#">
+          <div class="conf-card-body">
+            <div class="conf-card-location">San Antonio, USA</div>
+            <ul class="conf-card-chairs">
+              <li>Placeholder Name</li>
+              <li>Placeholder Name</li>
+            </ul>
+          </div>
+        </a>
 
-        </div>
-        <button class="carousel-btn carousel-next" aria-label="Next">&#8594;</button>
       </div>
     </div>
   </section>
