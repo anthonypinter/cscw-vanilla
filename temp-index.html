@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSCW | Under Construction</title>
+  <meta name="description" content="The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW). This site is under construction.">
+  <style>
+    :root {
+      --bg:        #ffffff;
+      --ink:       #000000;
+      --ink-mid:   #111111;
+      --ink-light: #555555;
+      --rule:      #cccccc;
+      --accent:    #1d3557;
+      --accent-2026: #0092CE;
+      --accent-2027: #c0392b;
+      --font:      "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.25rem;
+    }
+
+    /* Mirrors the .masthead-* styles in css/index.css */
+    .masthead-eyebrow {
+      display: block;
+      font-size: clamp(0.8rem, 2.3vw, 1.3rem);
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+
+    .masthead-title {
+      margin-top: 0.4rem;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead-sub {
+      display: block;
+      margin-top: 0.6rem;
+      font-size: clamp(0.95rem, 2.8vw, 1.6rem);
+      font-weight: 400;
+      color: var(--ink-mid);
+    }
+
+    .notice {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cards {
+      margin-top: 2.5rem;
+      width: 100%;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      --c: var(--accent);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 1.5rem;
+      border: 2px solid var(--c);
+      border-left-width: 8px;
+      border-radius: 6px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: background-color 0.15s, color 0.15s, transform 0.15s;
+    }
+
+    .card--2026 { --c: var(--accent-2026); }
+    .card--2027 { --c: var(--accent-2027); }
+
+    .card__label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c);
+    }
+
+    .card__title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .card__cta {
+      margin-top: 0.75rem;
+      font-weight: 600;
+      color: var(--c);
+    }
+
+    .card__cta::after {
+      content: "\00a0\2192";
+      display: inline-block;
+      transition: transform 0.15s;
+    }
+
+    .card--2026 .card__cta::after { content: none; }
+
+    .card--2026 .card__cta::before {
+      content: "\2190\00a0";
+      display: inline-block;
+      transition: transform 0.15s;
+    }
+
+    .card--2026:hover .card__cta::before,
+    .card--2026:focus-visible .card__cta::before {
+      transform: translateX(-4px);
+    }
+
+    .card:hover,
+    .card:focus-visible {
+      background: var(--c);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .card:hover .card__label,
+    .card:hover .card__cta,
+    .card:focus-visible .card__label,
+    .card:focus-visible .card__cta {
+      color: #ffffff;
+    }
+
+    .card:hover .card__cta::after,
+    .card:focus-visible .card__cta::after {
+      transform: translateX(4px);
+    }
+
+    .card:focus-visible {
+      outline: 3px solid var(--ink);
+      outline-offset: 3px;
+    }
+
+
+    /* Laptops and up: keep the title on one line, scaling it down to fit */
+    @media (min-width: 1024px) {
+      .masthead-title {
+        white-space: nowrap;
+        font-size: min(4.5rem, 7vw);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card, .card__cta::before, .card__cta::after { transition: none; }
+      .card:hover, .card:focus-visible { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="masthead-eyebrow">ACM SIGCHI</span>
+    <h1 class="masthead-title">CSCW Steering Committee</h1>
+    <span class="masthead-sub">Computer-Supported Cooperative Work &amp; Social Computing</span>
+
+    <p class="notice">
+      This site is under construction. Please use the links below to visit the
+      2026 and 2027 conference websites.
+    </p>
+
+    <div class="cards">
+      <a class="card card--2026" href="https://cscw.acm.org/2026/">
+        <span class="card__label">Salt Lake City, USA</span>
+        <span class="card__title">CSCW 2026</span>
+        <span class="card__cta">Visit the 2026 site</span>
+      </a>
+      <a class="card card--2027" href="https://cscw.acm.org/2027/">
+        <span class="card__label">Upcoming</span>
+        <span class="card__title">CSCW 2027</span>
+        <span class="card__cta">Visit the 2027 site</span>
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>
