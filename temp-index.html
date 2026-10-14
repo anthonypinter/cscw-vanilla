@@ -14,7 +14,8 @@
       --rule:      #cccccc;
       --accent:    #1d3557;
       --accent-2026: #0092CE;
-      --accent-2027: #c0392b;
+      --accent-2027: #00bb99;
+      --accent-2027-hover: #008570;
       --font:      "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
@@ -160,6 +161,12 @@
     .card:focus-visible .card__label,
     .card:focus-visible .card__cta {
       color: #ffffff;
+    }
+
+    /* 2027 accent is light, so darken the hover fill for white-text contrast */
+    .card--2027:hover,
+    .card--2027:focus-visible {
+      --c: var(--accent-2027-hover);
     }
 
     .card:hover .card__cta::after,
